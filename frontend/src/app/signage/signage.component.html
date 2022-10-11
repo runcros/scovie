@@ -1,0 +1,34 @@
+<div id="container">
+
+    <div id="header">
+        <div id="title"><i class="fa-sharp fa-solid fa-school" aria-hidden="true"></i> {{ school }}</div>
+        <div id="datetime">{{ actualDate }}</div>
+    </div>
+
+    <div id="main">
+        <table id="announcement-table">
+            <thead>
+                <tr>
+                    <th width="14%">Type</th>
+                    <th width="86%">Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let announcement">
+                    <th width="14%">{{ announcement.type }}</th>
+                    <th width="86%">{{ announcement.message }}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="info">
+        <div id="location">
+            <strong>
+                Propulsé par RunCros (André Théo LAURET)
+            </strong>
+        </div>
+    </div>
+
+
+</div>
